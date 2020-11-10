@@ -18,6 +18,7 @@ Zookeeper:
 ### Kafka Kurulumu
 
 Kurulumun nasıl yapıldığını görmek için: [install-kafka.sh](scripts/install-kafka.sh)
+
 SSL yapılandırmasını görmek için: [enable-ssl.sh](scripts/enable-ssl.sh)
 
 ### Test
