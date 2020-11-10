@@ -15,6 +15,11 @@ Consumer Groups:
 
 Zookeeper:
 
+### Kafka Kurulumu
+
+Kurulumun nasıl yapıldığını görmek için: [install-kafka.sh](scripts/install-kafka.sh)
+SSL yapılandırmasını görmek için: [enable-ssl.sh](scripts/enable-ssl.sh)
+
 ### Test
 
 `/tmp/test` dizini altına yeni bir dosya eklendiğinde `producer` kafka'ya iletiyor. `consumer` ise değişiklikleri
