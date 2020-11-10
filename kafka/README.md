@@ -4,13 +4,14 @@
 
 Terimleri bilmek, yönetimdeki hakimiyeti artırır.
 
+Broker: Kafka sunucunun kendisine verilen bir sıfat. Broker'ı Türkçe'ye simsar olarak çevirmek daha doğru gibi.
+`Producer`'dan alır, `Consumer`'a verir.
+
 Producer:
 
 Consumer:
 
 Consumer Groups:
-
-Broker:
 
 Zookeeper:
 
@@ -20,19 +21,17 @@ Zookeeper:
 kafka'dan alıyor.
 
 ```bash
-vagrant ssh client
+vagrant ssh
 
-# alttaki komutlar client sunucusunda verilir
-nohup bash -c "/vagrant/producer.rb" > /dev/null 2&>1
-/vagrant/consumer.rb
+# Tmux kullanıyorsan "CTRL-B + c" ile kullanmıyorsan "CTRL-A + c" ile her komut için yeni bir terminal aç.
+/vagrant/examples/ssl/producer.rb
+/vagrant/examples/ssl/consumer.rb
 
-# Tmux kullanıyorsan "CTRL-B + c" ile kullanmıyorsan "CTRL-A + c" yeni bir terminal açıp aşağıdaki komutu ver
 touch /tmp/test/foo.rb
 ```
 
 `CTRL-B + TAB` tuşlarına bastığında `consumer.rb`'nin çalıştığı terminale geçiş yaparsın.
 `foo.rb`'nin buraya düştüğünü görebilirsin.
-
 
 ### Kaynaklar
 

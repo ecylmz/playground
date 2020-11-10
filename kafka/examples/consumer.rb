@@ -23,11 +23,7 @@ end
 
 def main # rubocop:disable Metrics/MethodLength
   kafka = Kafka.new(
-    seed_brokers: '10.0.3.15:9093',
-    ssl_ca_cert: File.read('/vagrant/ssl/ca-cert'),
-    ssl_client_cert: File.read('/vagrant/ssl/client.cer.pem'),
-    ssl_client_cert_key: File.read('/vagrant/ssl/client.key.pem'),
-    ssl_verify_hostname: false
+    seed_brokers: '10.0.3.15:9092'
   )
 
   connect_in_timeout(kafka, TIMEOUT)
