@@ -30,8 +30,8 @@ kafka'dan alıyor.
 vagrant ssh
 
 # Tmux kullanıyorsan "CTRL-B + c" ile kullanmıyorsan "CTRL-A + c" ile her komut için yeni bir terminal aç.
-/vagrant/examples/ssl/producer.rb
-/vagrant/examples/ssl/consumer.rb
+/vagrant/examples/producer-ssl.rb
+/vagrant/examples/consumer-ssl.rb
 
 touch /tmp/test/foo.rb
 ```
